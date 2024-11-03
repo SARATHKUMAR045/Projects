@@ -284,7 +284,7 @@ class PurchaseBill {
 
 }
 
-public class Pharmacy_Management_System {
+public class MediStock_Navigator {
     private static Inventory inventory = new Inventory();
     private static Admin admin;
 
