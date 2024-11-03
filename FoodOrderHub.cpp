@@ -262,14 +262,14 @@ public:
 
 // Managing the entire food ordring system
 
-class online_food_ordering_system
+class 
 {
     vector<Menuitem> menu;
     Cart cart;
     User current_user;
 
 public:
-    online_food_ordering_system(User user) : current_user(user), cart(user.get_username())
+    FoodOrderHub(User user) : current_user(user), cart(user.get_username())
     {
         menu.push_back(Menuitem("Masala Dosai", 35));
         menu.push_back(Menuitem("Parota", 40));
@@ -363,7 +363,7 @@ int main()
 {
     User user;
     user.user_handle_Input();
-    online_food_ordering_system system(user);
+    FoodOrderHub system(user);
     system.orderfood();
     return 0;
 }
